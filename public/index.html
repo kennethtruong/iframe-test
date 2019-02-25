@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <script>
+      document.addEventListener('DOMContentLoaded', function()
+      {
+        const src = new URLSearchParams(window.location.search).get('src');
+        document.getElementById('iframe').setAttribute('src', src);
+      }
+      );
+    </script>
+    <iframe
+      id="iframe"
+      frameborder="0"
+      src=""
+      width="800px"
+      height="800px"
+    />
+  </body>
+</html>
